@@ -2,7 +2,31 @@
  Main objective of this project is to create a fully operational scientific calculator in C. STM32G031K8 microcontroller was used in this the project.This calculator has a 
 keypad connected to the enter the numbers and execute basic scientific and trigonometric functions. In order to display numbers 4-digit seven segment display(ssd) was used.
 
-### Tasks
+## Project Setup
+
+### STM32G0
+
+<img src="https://user-images.githubusercontent.com/65625392/117146080-8282d000-adbc-11eb-831d-5f75dddbcd7c.png" width=50% height=50%>
+
+### SSD  
+<img src="https://user-images.githubusercontent.com/65625392/117144529-b2c96f00-adba-11eb-8252-ce180a8446ea.png" width=50% height=50%>
+
+### KEYPAD
+<img src="https://user-images.githubusercontent.com/65625392/117144618-cc6ab680-adba-11eb-9475-5a4c1c154e71.png" width=40% height=40%>
+
+### PIN-TABLE
+![image](https://user-images.githubusercontent.com/65625392/117144967-426f1d80-adbb-11eb-9e1b-cf89aedc7b94.png)
+
+## Flowchart
+![image](https://user-images.githubusercontent.com/65625392/117146587-0a68da00-adbd-11eb-83db-d1d9834e238d.png)
+
+## Block Diagram
+![image](https://user-images.githubusercontent.com/65625392/117145373-c1fcec80-adbb-11eb-888d-b7e1cd9eac8a.png)
+
+## Schematic
+![image](https://user-images.githubusercontent.com/65625392/117145416-cfb27200-adbb-11eb-8b14-4f6c481008f1.png)
+
+## Tasks
 
 To achieving success an approach was taken to the problem by assigning specific tasks.
 
@@ -38,7 +62,7 @@ If the number obtained in the calculation or scientific calculation is not withi
 
 In this task, id should be displayed on the screen. If the operation is not done within 10 seconds, id is provided to be written on the screen.
 
-### How Code Works
+## How Code Works
 
 First of all in the main function, Keypad and ssd pins have been set and interrupt assignments
 have been made. Priority assignment of interrupts is done in the same way. Columns on the keypad
@@ -92,14 +116,14 @@ the overflowflag is synchronized to one. If overflow = 1, the display function p
 screen. If the operations performed are uncertain, invalidflag is equal to one, if invalidflag = 1, the
 display function prints “InuL” on the screen.
 
-### Unsolved Difficulties
+## Unsolved Difficulties
 
-If the last number on the screen is written as float, the first 3 digits are lit while writing the new number. As a solution, expected to reset the digits somewhere to be solved by debugging.
+-If the last number on the screen is written as float, the first 3 digits are lit while writing the new number. As a solution, expected to reset the digits somewhere to be solved by debugging.
 
-If a negative number is written on the screen, the new entered number is positive, but negativesign appears at the beginning. But the transaction between them is done correctly. In the same way, a solution can be found by resetting the digit during the debug process.
+-If a negative number is written on the screen, the new entered number is positive, but negativesign appears at the beginning. But the transaction between them is done correctly. In the same way, a solution can be found by resetting the digit during the debug process.
 
-When the digit of the entered number increases, the brightness of the ssd decreases.
+-When the digit of the entered number increases, the brightness of the ssd decreases.
 
-### Results and Comment
+## Results and Comment
 
 The use of the c programming language throughout the project made a good gain in getting used to the c programming language. Thanks to the project, the structure of the algorithms to be created between the keypad and ssd and how these algorithms work in harmony were learned. Algorithm setup and this established algorithm should establish a solid foundation for future code. If the algorithm is not functional enough, the code written becomes too long. As a result, debug sessions throughout the program are very long and slow down the process of writing the code. Timer and interrupt working logic has been learned well.
