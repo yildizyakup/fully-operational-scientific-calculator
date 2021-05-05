@@ -1,8 +1,6 @@
 # Fully-Operational-Scientific-Calculator
  Main objective of this project is to create a fully operational scientific calculator in C. STM32G031K8 microcontroller was used in this the project.This calculator has a 
-keypad connected to the enter the numbers and execute basic scientific and trigonometric functions. In order to display numbers 4-digit seven segment display was used.
-
-
+keypad connected to the enter the numbers and execute basic scientific and trigonometric functions. In order to display numbers 4-digit seven segment display(ssd) was used.
 
 ### Tasks
 
@@ -96,19 +94,12 @@ display function prints “InuL” on the screen.
 
 ### Unsolved Difficulties
 
-If the last number on the screen is written as float, the first 3 digits are lit while writing the new
-number. As a solution, expected to reset the digits somewhere to be solved by debugging.
+If the last number on the screen is written as float, the first 3 digits are lit while writing the new number. As a solution, expected to reset the digits somewhere to be solved by debugging.
 
-If a negative number is written on the screen, the new entered number is positive, but negative
-sign appears at the beginning. But the transaction between them is done correctly. In the same
-way, a solution can be found by resetting the digit during the debug process.
+If a negative number is written on the screen, the new entered number is positive, but negativesign appears at the beginning. But the transaction between them is done correctly. In the same way, a solution can be found by resetting the digit during the debug process.
+
+When the digit of the entered number increases, the brightness of the ssd decreases.
 
 ### Results and Comment
 
-The use of the c programming language throughout the project made a good gain in
-getting used to the c programming language. Thanks to the project, the structure of the
-algorithms to be created between the keypad and ssd and how these algorithms work in harmony
-were learned. Algorithm setup and this established algorithm should establish a solid foundation
-for future code. If the algorithm is not functional enough, the code written becomes too long.
-As a result, debug sessions throughout the program are very long and slow down the process of
-writing the code. Timer and interrupt working logic has been learned well.
+The use of the c programming language throughout the project made a good gain in getting used to the c programming language. Thanks to the project, the structure of the algorithms to be created between the keypad and ssd and how these algorithms work in harmony were learned. Algorithm setup and this established algorithm should establish a solid foundation for future code. If the algorithm is not functional enough, the code written becomes too long. As a result, debug sessions throughout the program are very long and slow down the process of writing the code. Timer and interrupt working logic has been learned well.
