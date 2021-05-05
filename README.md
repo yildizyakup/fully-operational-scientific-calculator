@@ -15,7 +15,7 @@ keypad connected to the enter the numbers and execute basic scientific and trigo
 <img src="https://user-images.githubusercontent.com/65625392/117144618-cc6ab680-adba-11eb-9475-5a4c1c154e71.png" width=40% height=40%>
 
 ### PIN-TABLE
-![image](https://user-images.githubusercontent.com/65625392/117144967-426f1d80-adbb-11eb-9e1b-cf89aedc7b94.png)
+![image](https://user-images.githubusercontent.com/65625392/117147772-40f32480-adbe-11eb-9d28-f234ccaffe99.png)
 
 ## Flowchart
 ![image](https://user-images.githubusercontent.com/65625392/117146587-0a68da00-adbd-11eb-83db-d1d9834e238d.png)
