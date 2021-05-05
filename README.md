@@ -53,3 +53,12 @@ reset and the id is written to the screen. If the operations done are not to be 
 the overflowflag is synchronized to one. If overflow = 1, the display function prints “OuFL” to the
 screen. If the operations performed are uncertain, invalidflag is equal to one, if invalidflag = 1, the
 display function prints “InuL” on the screen.
+
+## Unsolved Difficulties
+
+If the last number on the screen is written as float, the first 3 digits are lit while writing the new
+number. As a solution, expected to reset the digits somewhere to be solved by debugging.
+
+If a negative number is written on the screen, the new entered number is positive, but negative
+sign appears at the beginning. But the transaction between them is done correctly. In the same
+way, a solution can be found by resetting the digit during the debug process.
