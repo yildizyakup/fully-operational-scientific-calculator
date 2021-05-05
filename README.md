@@ -4,6 +4,8 @@ keypad connected to the enter the numbers and execute basic scientific and trigo
 
 ## Project Setup
 
+<img src="https://user-images.githubusercontent.com/65625392/117149830-3e91ca00-adc0-11eb-941e-393cf65173d6.png" width=50% height=50%>
+
 ### STM32G0
 
 <img src="https://user-images.githubusercontent.com/65625392/117146080-8282d000-adbc-11eb-831d-5f75dddbcd7c.png" width=50% height=50%>
