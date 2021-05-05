@@ -54,7 +54,7 @@ the overflowflag is synchronized to one. If overflow = 1, the display function p
 screen. If the operations performed are uncertain, invalidflag is equal to one, if invalidflag = 1, the
 display function prints “InuL” on the screen.
 
-## Unsolved Difficulties
+### Unsolved Difficulties
 
 If the last number on the screen is written as float, the first 3 digits are lit while writing the new
 number. As a solution, expected to reset the digits somewhere to be solved by debugging.
@@ -62,3 +62,13 @@ number. As a solution, expected to reset the digits somewhere to be solved by de
 If a negative number is written on the screen, the new entered number is positive, but negative
 sign appears at the beginning. But the transaction between them is done correctly. In the same
 way, a solution can be found by resetting the digit during the debug process.
+
+### Results and Comment
+
+The use of the c programming language throughout the project made a good gain in
+getting used to the c programming language. Thanks to the project, the structure of the
+algorithms to be created between the keypad and ssd and how these algorithms work in harmony
+were learned. Algorithm setup and this established algorithm should establish a solid foundation
+for future code. If the algorithm is not functional enough, the code written becomes too long.
+As a result, debug sessions throughout the program are very long and slow down the process of
+writing the code. Timer and interrupt working logic has been learned well.
