@@ -1,7 +1,56 @@
 # Fully-Operational-Scientific-Calculator
-Main objective of this project is to create a fully operational scientific calculator in C. STM32G031K8 microcontroller was used in this the project.This calculator has a keypad connected to the enter the numbers and execute basic scientific and trigonometric functions. In order to display numbers 4-digit seven segment display was used. 
+Main objective of this project is to create a fully operational scientific calculator in C. STM32G031K8 microcontroller was used in this the project.This calculator has a keypad connected to the enter the numbers and execute basic scientific and trigonometric functions. In order to display numbers 4-digit seven segment display was used.
+
+### Tasks
+
+To achieving success an approach was taken to the problem by assigning specific tasks.
+
+1 Displaying one digit number on SSD ✓
+
+The first task is to write a number on the display for the coming interrupt when the keypad ispressed.
+
+2 Displaying more than one digit number on SSD ✓
+
+To achive this task, writing more than one digit is possible by shifting the number on the screen
+to one left.
+
+3 Addition between two numbers ✓
+
+The screen must be cleared when the sum sign is pressed to add two number. After doing this,
+it must be ensured that the deleted number is stored in another number. The number written to
+the cleared screen must be added to the previous number.
+
+4 Substraction - Division - Multiplication between two numbers ✓
+
+If we want to do this operations, we need to be able to operate with negative numbers. We can
+do this by substracting the new number from the old number written on the screen, and assigning
+a negative flag according to the result. We can print the – sign at the beginnig of the number
+accordingly in the print function.
+
+5 Operations with floating numbers. ✓
+
+In order to achieve this, the result obtained as a result of operations performed, obtaining the
+integer part and fractional part. When we get this parts we can print it on the screen with dots.
+
+6 Scientific Calculations ✓
+
+To do this task scientific flag assigned to the * key. Scientific operation is provided in scientific
+calculation function according to incoming interrupts.
+
+7 Overflow and invalid assignment ✓
+
+If the number obtained in the calculation or scientific calculation is not within the required
+range, the overflow flag should be activated and the oveflow printed on the screen. If the number
+obtained in calculation or scientific calculation is uncertain, the invalid flag should be activated
+and printed on the invalid screen.
+
+8 ID Display ✓
+
+In this task, id should be displayed on the screen. If the operation is not done within 10 seconds,
+id is provided to be written on the screen.
 
 ### How Code Works
+
 First of all in the main function, Keypad and ssd pins have been set and interrupt assignments
 have been made. Priority assignment of interrupts is done in the same way. Columns on the keypad
 are selected as input. Accordingly, rows are selected as output. When the keypad is pressed, interrupt
